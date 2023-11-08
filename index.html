@@ -16,63 +16,86 @@
 
 <body class="home">
     <header class="header">
-        <img src="" alt="Logo" >
-        <h1>Mi tienda</h1>
+        <img class="header__logo" src="./images/icon-item.png" alt="Logo">
+        <h1 class="header__title">Mi tienda</h1>
+
         <nav class="navbar">
-            <ul>
+            <ul class="navbar__menu">
                 <li>
-                    <a href="./index.html">Home</a>
+                    <a class="navbar__item navbar__item--active" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a class="navbar__item navbar__item--active" href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a class="navbar__item navbar__item--active" href="#">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <section>
-            <div>
+        <section class="section section--slider">
+            <div class="slider">
+                <div class="slider__one">
+                    <h4 class="slider__title">primer Slide</h4>
+                    <img class="slider__image" src="./images/gallery/img01.jpg" alt="">
+                </div>
                 <div>
-                    <h4>primer Slide</h4>
-                    <img src="" alt="">
+                    <h4 class="slider__title">segundo Slide</h4>
+                    <img class="slider__image" src="./images/gallery/img02.jpg" alt="">
+                </div>
+                <div>
+                    <h4 class="slider__title">tercero Slide</h4>
+                    <img class="slider__image" src="./images/gallery/img03.jpg" alt="">
                 </div>
             </div>
         </section>
+
         <section>
             <div>banner</div>
         </section>
 
-        <section>
+        <section class="section section--products">
             <h3>Galeria de productos</h3>
-            <figure>
-                <img src="" alt="descripción de la foto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo laboriosam rem, vel
+            <div>formulario de busqueda y link para crear un nuevo producto</div>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/img02.jpg" alt="descripción de la foto">
+                <h4 class="card__title">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
+                    laboriosam rem, vel
                     saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
                     Temporibus quam nulla harum expedita?</p>
                 <div>
-                    <button>Agregar</button>
+                    <span class="card__price">5500,02</span>
+                    <button class="button button--sm button--confirm">Agregar</button>
                     <span>0</span>
-                    <button>Quitar</button>
+                    <button class="button button--sm button--danger">Quitar</button>
                 </div>
-                <h4>Nombre del primer producto</h4>
             </figure>
 
-            <figure>
-                <img src="" alt="descripción de la foto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo laboriosam rem, vel
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/img03.jpg" alt="descripción de la foto">
+                <h4 class="card__title">Nombre del segundo producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
+                    laboriosam rem,
+                    vel
                     saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
                     Temporibus quam nulla harum expedita?</p>
                 <div>
-                    <button>Agregar</button>
+                    <span class="card__price">8500,50</span>
+                    <button class="button button--sm button--confirm">Agregar</button>
                     <span>0</span>
-                    <button>Quitar</button>
+                    <button class="button button--sm button--danger">Quitar</button>
                 </div>
-                <h4>Nombre del primer producto</h4>
             </figure>
         </section>
 
     </main>
 
     <footer class="footer">
-        <span>&copyra todos los derechos propios 2023</span>
+        <span>&copyright 2023 Todos los derechos reservados.</span>
     </footer>
 
     <script src="./js/"></script>
