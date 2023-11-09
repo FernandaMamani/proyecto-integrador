@@ -15,9 +15,36 @@ a:link {
   text-decoration: none;
 }
 
+.slider {
+  position: relative;
+  height: 25vh;
+  width: 300%;
+  display: flex;
+  animation-name: move-slide;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.slider__one, .slider__two, .slider__Three {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.slider__title {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+}
+.slider__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
+  gap: 1vw;
   padding: 0.5vw;
   width: calc(100% - 1vw);
 }
@@ -30,8 +57,19 @@ header {
   grid-area: header;
 }
 
-main {
+.main {
   grid-area: main;
+}
+.main .section {
+  width: 100%;
+}
+.main .section--slider {
+  overflow: hidden;
+}
+.main .section--products {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
 
 h1 {

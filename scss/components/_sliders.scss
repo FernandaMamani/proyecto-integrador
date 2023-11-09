@@ -1,0 +1,37 @@
+@use"../abstracts/variables" as var;
+@use"../abstracts/mixins" as mix;
+
+$_width: 100%;
+
+.slider {
+    position: relative;
+    height: 25vh;
+    width: calc($_width*3);
+    display: flex;
+
+
+    animation-name:move-slide;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    &__one,
+    &__two,
+    &__Three {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &__title {
+        position: absolute;
+        font-size: 2rem;
+        color: white;
+    }
+
+    &__image {
+        width: $_width;
+        object-fit: cover;
+        object-position: center;
+    }
+}
