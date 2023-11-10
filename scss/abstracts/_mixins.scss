@@ -1,7 +1,9 @@
 @use"./variables" as var;
 
-button-default($colorPrimary,$colorSecondary, $color) {
-    background-image: mix.button-default(127 deg, $colorPrimary, $colorSecondary, 65%);
-    border-color: $color;
-        color: $color;
+@mixin button-default($colorPrimary,$colorSecondary,$color){
+   
+                background-image: linear-gradient(127deg, $colorPrimary, $colorSecondary, $colorPrimary 65%);
+                border-color: blue;
+                color: blue;
+                transition: all 300ms; 
 }
