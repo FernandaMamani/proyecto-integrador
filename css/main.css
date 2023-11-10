@@ -15,20 +15,61 @@ a:link {
   text-decoration: none;
 }
 
+.buttons {
+  border: 0.0625rem solid black;
+  border-radius: 0.35rem;
+  background-image: linear-gradient(125deg, gray, white 65%);
+  box-shadow: 1px 1px 4px -3px gray;
+  cursor: pointer;
+}
+.buttons--add {
+  @in background-image: linear-gradient(white, white);
+  border-color: blue;
+  color: blue;
+  transition: all 300ms;
+}
+.buttons--add:hover, .buttons--add:active {
+  background-image: linear-gradient(darkblue, blue, darkblue);
+  border-color: white;
+  color: white;
+}
+.buttons--remove {
+  background-image: linear-gradient(white, white);
+  border-color: red;
+  color: red;
+  transition: all 300ms;
+}
+.buttons--remove:hover, .buttons--remove:active {
+  background-image: linear-gradient(darkred, red, darkred);
+  border-color: white;
+  color: white;
+}
+.buttons--disabled {
+  background-image: linear-gradient(white, white);
+  border-color: gray;
+  color: gray;
+  transition: all 300ms;
+}
+.buttons--disabled:hover, .buttons--disabled:active {
+  background-image: linear-gradient(125deg, gray, white 65%);
+  border-color: white;
+  color: white;
+}
+
 .slider {
   position: relative;
   height: 25vh;
   width: 300%;
   display: flex;
   animation-name: move-slide;
-  animation-duration: 9s;
+  animation-duration: 18s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-.slider__one, .slider__two, .slider__Three {
+.slider__one, .slider__two, .slider__three {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 .slider__title {
   position: absolute;
@@ -39,6 +80,52 @@ a:link {
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+@keyframes move-slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -100%;
+  }
+  95% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.card {
+  padding: 1vw;
+  background-color: beige;
+}
+.card__image {
+  width: 25%;
+}
+.card__title {
+  color: green;
+}
+.card__price {
+  color: blue;
+}
+.card__price::before {
+  content: "$";
 }
 
 body {

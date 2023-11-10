@@ -1,1 +1,7 @@
 @use"./variables" as var;
+
+button-default($colorPrimary,$colorSecondary, $color) {
+    background-image: mix.button-default(127 deg, $colorPrimary, $colorSecondary, 65%);
+    border-color: $color;
+        color: $color;
+}
