@@ -9,59 +9,81 @@
 
 <body>
     <section>
-        <h3>Alta de nuevo producto</h3>
+        <h3>Alta de Nuevo Producto</h3>
         <form action="#" method="post">
 
-            <div>
-                <label for="name-product" class="name-product">Producto</label>
-                <input type="text" name="name-product" id="name-product" minlength="5" maxlength="35"
-                    placeholder="Ingresa el nombre del producto" required>
+            <div class="input">
+                <label class="input-label" for="name-product" class="name-product">Producto</label>
+                <input class="input-validate" type="text" name="name-product" id="name-product" minlength="5"
+                    maxlength="35" placeholder="Ingresa el nombre del producto" required>
             </div>
 
-            <div>
-                <label for="price">Precio</label>
-                <input type="number" name="price" id="id-price" min="0" max="1000000" step="1"
+            <div class="input">
+                <label class="input-label" for="price">Precio</label>
+                <input class="input-validate" type="number" name="price" id="id-price" min="0" max="1000000" step="1"
                     placeholder="Ingresa el precio">
             </div>
 
-            <div>
-                <label for="">Stock</label>
-                <input type="number" name="stock" id="id-stock" min="0" max="10000" step="1"
+            <div class="input">
+                <label class="input-label" for="">Stock</label>
+                <input class="input-validate" type="number" name="stock" id="id-stock" min="0" max="10000" step="1"
                     placeholder="Ingresa el stock disponible">
             </div>
 
-            <div>
-                <label for="brand">Marca</label>
-                <input type="text" name="brand" id="id-brand">
+            <div class="input">
+                <label class="input-label" for="brand">Marca</label>
+                <input class="input-validate" type="text" name="brand" id="id-brand">
             </div>
 
-            <div>
-                <label for="category">Categoría</label>
-                <input type="text" name="category" id="id-category">
+            <div class="input">
+                <label class="input-label" for="category">Categoría</label>
+                <input class="input-validate" type="text" name="category" id="id-category">
             </div>
 
-            <div>
-                <label for="short-description">Descripción Breve</label>
-                <input type="text" name="short-description" id="short-description" minlength="5" maxlength="35"
-                    placeholder="Ingresa una breve descripción" required>
+            <div class="input">
+                <label class="input-label" for="short-description">Descripción Breve</label>
+                <input class="input-validate" type="text" name="short-description" id="short-description" minlength="5"
+                    maxlength="50" placeholder="Ingresa una breve descripción" required>
 
             </div>
 
-            <div>
-                <label for="long-description">Descripción Detallada</label>
-                <textarea name="long-description" id="long-description" cols="40" rows="3" maxlength="90"
-                    placeholder="Ingresa una descripción detallada"></textarea>
+            <div class="input">
+                <label class="input-label" for="long-description">Descripción Detallada</label>
+                <textarea class="input-validate" name="long-description" id="long-description" cols="40" rows="3"
+                    maxlength="200" placeholder="Ingresa una descripción detallada"></textarea>
             </div>
 
-            <div>
-                <label for="product-origin">Origen del producto</label>
-                
+            <div class="input">
+                <label class="input-validate" for="product-origin">Origen del producto :</label>
+                <input class="" type="radio" id="id-origen1" name="opciones" required>
+                <label class="" for="id-origen1">Nacional</label>
+                <input class="" type="radio" id="id-origen2" name="opciones" required>
+                <label class="" for="id-origen2">Importado</label>
             </div>
 
+            <div class="input">
+                <label for="id-shipping">Envío sin cargo:<span>*</span></label>
+                <select id="id-shipping" name="input-shipping" required>
+                    <option value="0" disabled selected="">- Seleccionar -</option>
+                    <option value="1">Si</option>
+                    <option value="2">No</option>
+                </select>
+            </div>
 
+            <div class="input">
+                <label class="input-label" for="input-photo">Fotografía</label>
+                <input class="" type="file" name="input-photo" id="input-photo">
+            </div>
 
+            <section>
+                <div class="button">
+                    <input class="button--send" type="submit" value="Enviar datos">
+                </div>
+            </section>
 
-
+<footer class="footer">
+    <span>&copy; 2023 Todos los derechos reservados.</span>
+</footer>
 
 
 
