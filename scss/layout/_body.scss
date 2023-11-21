@@ -6,9 +6,9 @@ $_padding: 0.5vw;
 body {
     display: grid;
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    "header header"
+    "main main"
+    "footer footer";
     gap: 1vw;
 
     padding: $_padding;

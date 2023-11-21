@@ -1,11 +1,13 @@
 @use"../abstracts/variables" as var;
 @use"../abstracts/mixins" as mix;
 
-header {
+.header {
     grid-area: header;
 
     &__title {
         font-family: Super Plants; //cambiar a Super plant cuando se haya bajado la letra.
         // color: var.$textColorPrimary
     }
+
+    
 }

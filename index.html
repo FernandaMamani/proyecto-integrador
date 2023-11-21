@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="./images/Logo Ave Negra Maluku.png">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
 </head>
 
@@ -63,10 +63,18 @@
 
         <section class="section section--products">
             <h3>Galeria de productos</h3>
-            <div>formulario de busqueda y link para crear un nuevo producto</div>
+
+            <!-- <div>formulario de busqueda y link para crear un nuevo producto</div> -->
+            <form class="search" action="post">
+                <input class="search__input" type="search" placeholder="Buscar">
+                <div class="icon-search">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+            </form>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/pimientaG-maluku-pi copia.jpg" alt="descripción de la foto">
+                <img class="card__image" src="./images/gallery/pimientaG-maluku-pi copia.jpg"
+                    alt="descripción de la foto">
                 <h4 class="card__title">Nombre del primer producto</h4>
                 <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
                     laboriosam rem, vel
@@ -206,24 +214,28 @@
                     <span>0</span>
                     <button class="button button--sm button--remove">Quitar</button>
                 </div>
-
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/nueces-maluku-pi.jpg" alt="descripción de la foto">
-                    <h4 class="card__title">Nombre del segundo producto</h4>
-                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                        laboriosam rem,
-                        vel
-                        saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                        Temporibus quam nulla harum expedita?</p>
-                    <div>
-                        <span class="card__price">8500,50</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span>0</span>
-                        <button class="button button--sm button--remove">Quitar</button>
-                    </div>
-                </figure>
-
             </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/nueces-maluku-pi.jpg" alt="descripción de la foto">
+                <h4 class="card__title">Nombre del segundo producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
+                    laboriosam rem,
+                    vel
+                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
+                    Temporibus quam nulla harum expedita?</p>
+                <div>
+                    <span class="card__price">8500,50</span>
+                    <button class="button button--sm button--add">Agregar</button>
+                    <span>0</span>
+                    <button class="button button--sm button--remove">Quitar</button>
+                </div>
+            </figure>
+
+        </section>
+
+        <section class="btn-alta">
+            <a class="button button--lg button--add" href="./products.html" target="_blank">Nuevo Producto</a>
         </section>
 
     </main>

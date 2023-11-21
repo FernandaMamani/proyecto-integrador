@@ -1,6 +1,9 @@
 @use"../abstracts/variables" as var;
 @use"../abstracts/mixins" as mix;
 
-.navbar {
 
+
+.navbar__item--active{
+    color:blue;
+    font-weight: bold;
 }

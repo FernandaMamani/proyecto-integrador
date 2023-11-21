@@ -1,0 +1,13 @@
+@use"../abstracts/variables" as var;
+@use"../abstracts/mixins" as mix;
+
+.search {
+    display: inline-block;
+    margin-top: 200px;
+    background-color: green;
+
+    .search__input{
+        background-color: pink;
+    }
+}
+

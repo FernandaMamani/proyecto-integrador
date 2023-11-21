@@ -27,18 +27,18 @@
     }
 
     &--add {
-        @include mix.button-default(var.$backgroundColorLigth, var.$backgroundColorLigth);
+        @include mix.button-default(var.$backgroundColorLigth, var.$backgroundColorLigth, var.$backgroundColor);
         //@include mix.button-default(white, white);
 
         /* background-image: linear-gradient(white, white); // Todo esto se va a _mixins.scss
          border-color: blue;
         color: blue;
         transition: all 300ms;
- */
+     */
         &:hover,
         &:active {
             @include mix.button-active(var.$backgroundColorDark, var.$backgroundColor, var.$backgroundColorLigth);
-           // @include mix.button-active(darkblue, blue, white);
+            // @include mix.button-active(darkblue, blue, white);
 
             /*  background-image: linear-gradient(125deg, darkblue, blue, darkblue 65%); // Todo esto se va a _mixins.scss
             border-color: white;
@@ -48,16 +48,16 @@
 
     &--remove {
         @include mix.button-default(var.$backgroundColorLigth, var.$backgroundColorLigth, red);
-       // @include mix.button-default(white, white, red);
+        // @include mix.button-default(white, white, red);
 
         /* background-image: linear-gradient(white, white);    // Todo esto se va a _mixins.scss
         border-color: red;
         color: red;
         transition: all 300ms;
- */
+      */
         &:hover,
         &:active {
-@include mix.button-active(darkred, red, var.$backgroundColorLigth);
+            @include mix.button-active(darkred, red, var.$backgroundColorLigth);
             //@include mix.button-active(darkred, red, white);
 
             /* background-image: linear-gradient(125deg, red, darkred 65%);    // Todo esto se va a _mixins.scss
@@ -68,7 +68,7 @@
 
     &--disabled {
         @include mix.button-default(var.$backgroundColorLigth, var.$backgroundColorLigth, gray);
-       // @include mix.button-default(white, white, gray);
+        // @include mix.button-default(white, white, gray);
 
         /*  background-image: linear-gradient(white, white);       // Todo esto se va a _mixins.scss
         border-color:gray;
