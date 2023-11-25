@@ -6,11 +6,15 @@ $_padding: 0.5vw;
 body {
     display: grid;
     grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
     gap: 1vw;
 
     padding: $_padding;
     width: calc(100% - (2*$_padding));
+
+    .header__title {
+            color: green;
+        }
 }

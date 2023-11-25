@@ -1,9 +1,19 @@
 @use"../abstracts/variables" as var;
 @use"../abstracts/mixins" as mix;
 
+.navbar {
+    text-decoration: none;
+&__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    gap: 2vw;
 
-
-.navbar__item--active{
-    color:blue;
+   
+}
+    .navbar__item--active{
+    color:rgb(255, 0, 149);
     font-weight: bold;
 }
+}
+

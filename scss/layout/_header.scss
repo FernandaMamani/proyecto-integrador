@@ -3,11 +3,18 @@
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center center;
+    place-content: center center;
 
     &__title {
         font-family: Super Plants; //cambiar a Super plant cuando se haya bajado la letra.
         // color: var.$textColorPrimary
     }
 
-    
+        &__logo {
+            width: 10vw;
+            height: auto;
+        }
 }

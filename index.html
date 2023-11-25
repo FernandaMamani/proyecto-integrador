@@ -19,8 +19,7 @@
 <body class="home">
     <header class="header">
         <img class="header__logo" src="./images/Recurso 11.png" alt="Logo">
-        <h1 class="header__title">Maluku - Home</h1>
-
+ <!-- <h1 class="header__title"></h1> -->
         <nav class="navbar">
             <ul class="navbar__menu">
                 <li>
@@ -55,22 +54,21 @@
             </div>
         </section>
 
-        <section>
-            <div>banner</div>
-        </section>
-
-
-
-        <section class="section section--products">
-            <h3>Galeria de productos</h3>
-
+        <Section class="section section--search">
             <!-- <div>formulario de busqueda y link para crear un nuevo producto</div> -->
             <form class="search" action="post">
-                <input class="search__input" type="search" placeholder="Buscar">
-                <div class="icon-search">
-                    <span class="material-symbols-outlined">search</span>
+                <div class="search__area">
+                    <input class="search__input" type="search" placeholder="Buscar">
+                    </input>
+                    <button type="submit"><span class="material-symbols-outlined">search</span></button>
                 </div>
+
             </form>
+        </Section>
+
+        <h3>Galeria de productos</h3>
+        <section class="section section--products">
+
 
             <figure class="card card--product">
                 <img class="card__image" src="./images/gallery/pimientaG-maluku-pi copia.jpg"
