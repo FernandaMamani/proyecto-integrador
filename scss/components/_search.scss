@@ -1,24 +1,39 @@
 @use"../abstracts/variables" as var;
 @use"../abstracts/mixins" as mix;
 
-.search {
-    width: 50%;
-    margin:2vw;
-    background-color: rgb(128, 0, 2);
-    
-
-
-&__area {
+.search-section {
+    width: 60vw;
+    margin: 2vw;
    
-}
 
-    &__input{
-       
-        width:88%;
-        height: 7vh;
-        background-color: pink;
-        
+
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__bar {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input,
+    &__btn {
+        height: 40px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+    }
+
+    &__input {
+        border-right: none;
+        flex-grow: 1;
+width: 60vw;
+         
+    }
+
+    &__btn {
+        background-color: rgb(94, 29, 168);
+        border-left: none;
     }
 
 }
-

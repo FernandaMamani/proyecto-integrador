@@ -26,7 +26,8 @@ a:link {
   cursor: pointer;
 }
 .button--xs {
-  width: 3rem;
+  width: 4rem;
+  height: 2.5rem;
   padding: 0.0625rem;
   font-size: 0.4rem;
 }
@@ -175,15 +176,31 @@ a:link {
   content: "$";
 }
 
-.search {
-  width: 50%;
+.search-section {
+  width: 60vw;
   margin: 2vw;
-  background-color: rgb(128, 0, 2);
 }
-.search__input {
-  width: 88%;
-  height: 7vh;
-  background-color: pink;
+.search-section__form {
+  display: flex;
+  justify-content: center;
+}
+.search-section__bar {
+  display: flex;
+  align-items: center;
+}
+.search-section__input, .search-section__btn {
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+.search-section__input {
+  border-right: none;
+  flex-grow: 1;
+  width: 60vw;
+}
+.search-section__btn {
+  background-color: rgb(94, 29, 168);
+  border-left: none;
 }
 
 body {
@@ -221,13 +238,13 @@ body .header__title {
 }
 .main .section {
   width: 100%;
+  /* &--search {
+      width: 100%;
+      height: 5%;
+  } */
 }
 .main .section--slider {
   overflow: hidden;
-}
-.main .section--search {
-  width: 100%;
-  height: 5%;
 }
 .main .section--products {
   display: grid;
