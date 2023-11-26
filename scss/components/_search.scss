@@ -2,12 +2,23 @@
 @use"../abstracts/mixins" as mix;
 
 .search {
-    display: inline-block;
-    margin-top: 200px;
-    background-color: green;
+    width: 50%;
+    margin:2vw;
+    background-color: rgb(128, 0, 2);
+    
 
-    .search__input{
+
+&__area {
+   
+}
+
+    &__input{
+       
+        width:88%;
+        height: 7vh;
         background-color: pink;
+        
     }
+
 }
 

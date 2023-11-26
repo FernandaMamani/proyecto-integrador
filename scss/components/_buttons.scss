@@ -8,6 +8,12 @@
     box-shadow: 1px 1px 4px -3px gray;
     cursor: pointer;
 
+    &--xs {
+        width: 3rem;
+        padding: 0.0625rem;
+        font-size: 0.40rem;
+    }
+
     &--sm {
         width: 6rem;
         padding: 0.125rem;

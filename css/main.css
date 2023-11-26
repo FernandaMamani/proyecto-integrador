@@ -25,6 +25,11 @@ a:link {
   box-shadow: 1px 1px 4px -3px gray;
   cursor: pointer;
 }
+.button--xs {
+  width: 3rem;
+  padding: 0.0625rem;
+  font-size: 0.4rem;
+}
 .button--sm {
   width: 6rem;
   padding: 0.125rem;
@@ -171,11 +176,13 @@ a:link {
 }
 
 .search {
-  display: inline-block;
-  margin-top: 200px;
-  background-color: green;
+  width: 50%;
+  margin: 2vw;
+  background-color: rgb(128, 0, 2);
 }
-.search .search__input {
+.search__input {
+  width: 88%;
+  height: 7vh;
   background-color: pink;
 }
 
@@ -217,6 +224,10 @@ body .header__title {
 }
 .main .section--slider {
   overflow: hidden;
+}
+.main .section--search {
+  width: 100%;
+  height: 5%;
 }
 .main .section--products {
   display: grid;
