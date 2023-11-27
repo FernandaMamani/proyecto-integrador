@@ -12,11 +12,6 @@
             overflow: hidden;
         }
 
-        /* &--search {
-            width: 100%;
-            height: 5%;
-        } */
-
         &--products {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -25,6 +20,56 @@
 
         }
 
+    }
 
+    .about-us {
+        margin: 1vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.5vw;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__text,
+        &__image {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0.1vw;
+        }
+
+        &__text1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+
+        }
+
+        &__image1 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        &__image2 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &__text2 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+
+        }
+
+        &__title,
+        &__p,
+        &__link {
+            width: 100%;
+            margin-bottom: 1vw;
+            margin-left: 1vw;
+        }
     }
 }
