@@ -4,7 +4,6 @@
 .button {
     border: 0.0625rem solid black;
     border-radius: 0.35rem;
-    //background-image: linear-gradient(125deg, gray, white 65%);
     box-shadow: 1px 1px 4px -3px gray;
     cursor: pointer;
 
@@ -12,7 +11,8 @@
         width: 4rem;
         height: 2.5rem;
         padding: 0.0625rem;
-        font-size: 0.40rem;
+        font-size: 0.60rem;
+        font-weight: bold;
     }
 
     &--sm {
@@ -34,64 +34,38 @@
     }
 
     &--add {
+        grid-area: add;
         @include mix.button-default(var.$backgroundColorLigth, var.$backgroundColorLigth, var.$backgroundColor);
-        //@include mix.button-default(white, white);
 
-        /* background-image: linear-gradient(white, white); // Todo esto se va a _mixins.scss
-         border-color: blue;
-        color: blue;
-        transition: all 300ms;
-     */
+
         &:hover,
         &:active {
             @include mix.button-active(var.$backgroundColorDark, var.$backgroundColor, var.$backgroundColorLigth);
-            // @include mix.button-active(darkblue, blue, white);
 
-            /*  background-image: linear-gradient(125deg, darkblue, blue, darkblue 65%); // Todo esto se va a _mixins.scss
-            border-color: white;
-            color: white; */
         }
     }
 
     &--remove {
+        grid-area: remove;
         @include mix.button-default(var.$backgroundColorLigth, var.$backgroundColorLigth, red);
-        // @include mix.button-default(white, white, red);
 
-        /* background-image: linear-gradient(white, white);    // Todo esto se va a _mixins.scss
-        border-color: red;
-        color: red;
-        transition: all 300ms;
-      */
+
         &:hover,
         &:active {
             @include mix.button-active(darkred, red, var.$backgroundColorLigth);
-            //@include mix.button-active(darkred, red, white);
 
-            /* background-image: linear-gradient(125deg, red, darkred 65%);    // Todo esto se va a _mixins.scss
-            border-color: white;
-            color: white; */
         }
     }
 
     &--disabled {
         @include mix.button-default(var.$backgroundColorLigth, var.$backgroundColorLigth, gray);
-        // @include mix.button-default(white, white, gray);
 
-        /*  background-image: linear-gradient(white, white);       // Todo esto se va a _mixins.scss
-        border-color:gray;
-        color: gray;
-        transition: all 300ms;
-        cursor:not-allowed */
-        ;
+        cursor:not-allowed;
 
         &:hover,
         &:active {
             @include mix.button-active(gray, lightgray, var.$backgroundColorLigth);
-            //@include mix.button-active(gray, lightgray, white);
 
-            /*  background-image: linear-gradient(125deg, gray,lightgray, white 65%);      // Todo esto se va a _mixins.scss
-            border-color: white;
-            color: white; */
         }
     }
 }

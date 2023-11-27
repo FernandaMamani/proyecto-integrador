@@ -5,24 +5,45 @@
 .card {
     padding: 1vw;
     background-color: rgb(203, 203, 200);
-    
-
-
+    box-shadow: 5px 6px 8px 0 rgba(0, 0, 0, 0.2);;
 
     &__image {
         width: 100%;
-        
+
     }
 
     &__title {
         color: green;
     }
 
+    &__item {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "price price price"
+            "remove count add";
+        align-items: center;
+        gap: 10px;
+    }
+
     &__price {
-        color: blue;
+        grid-area: price;
+        margin: 0.7vw;
+        color: rgb(12, 12, 12);
+        font-weight: bold;
+        text-align: center;
 
         &::before {
             content: "$";
         }
     }
+
+    &__count {
+        grid-area: count;
+        margin: 0 10px;
+        text-align: center;
+
+    }
 }
+
