@@ -177,6 +177,9 @@ a:link {
 .search-section {
   width: 60vw;
   margin: 2vw;
+  display: grid;
+  grid-template-columns: 3fr auto;
+  gap: 1vw;
 }
 .search-section__form {
   display: flex;
@@ -185,20 +188,30 @@ a:link {
 .search-section__bar {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .search-section__input, .search-section__btn {
-  height: 40px;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
+  height: 4vw;
+  border: 1.5px solid #ccc;
+  padding: 0.5vw;
 }
 .search-section__input {
   border-right: none;
   flex-grow: 1;
-  width: 60vw;
+  width: 100%;
 }
 .search-section__btn {
   background-color: rgb(94, 29, 168);
   border-left: none;
+}
+.search-section__new-product {
+  align-self: center;
+  padding: 0.5vw;
+  background-color: rgb(94, 29, 168);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1, 2vw;
 }
 
 body {
@@ -217,6 +230,7 @@ body .header__title {
 }
 
 .header {
+  width: auto;
   grid-area: header;
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -241,7 +255,7 @@ body .header__title {
   text-decoration: none;
 }
 .header__icon-span {
-  margin-right: 1vw;
+  margin-right: 0.2vw;
 }
 
 .main {
@@ -319,12 +333,17 @@ body .header__title {
   }
 }
 
-form {
-  margin: auto;
+.contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+}
+.contact__form {
+  width: 50vw;
   text-align: center;
 }
-
-fieldset {
+.contact__field {
   background-color: #B7E4C7;
   border: 2px solid;
   border-color: #2D6A4F;
@@ -332,8 +351,7 @@ fieldset {
   margin-bottom: 4vw;
   padding: 2vw;
 }
-
-legend {
+.contact__legend {
   color: white;
   padding: 0.5em;
   background-color: #2D6A4F;
@@ -344,17 +362,15 @@ legend {
   font-weight: 700;
   font-style: bold;
 }
-
-.label-block {
+.contact .label-block {
   display: block;
   margin-top: 0.1vw;
   margin-bottom: 0.1vw;
 }
-
-input[type=text],
-input[type=email],
-input[type=tel],
-textarea {
+.contact input[type=text],
+.contact input[type=email],
+.contact input[type=tel],
+.contact textarea {
   width: 75%;
   height: 3vw;
   margin-top: 2vw;
@@ -362,4 +378,21 @@ textarea {
   background-color: #D8F3DC;
   border: 1px solid #2D6A4F;
   border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
+}
+.contact__info {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1vw;
+  font-size: small;
+}
+.contact__info__info-iframe {
+  width: 50%;
+  height: auto;
+}
+
+.contact-form__submit {
+  background-color: blueviolet;
+}
+.contact-form__submit:hover {
+  background-color: #d4656e;
 }/*# sourceMappingURL=main.css.map */

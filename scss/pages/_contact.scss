@@ -1,48 +1,83 @@
 @use"../abstracts/variables" as var;
 @use"../abstracts/mixins" as mix;
 
-form {
-    margin: auto;
-    text-align: center;
+.contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+
+    &__form {
+        width: 50vw;
+        text-align: center;
+
+    }
+
+
+    &__field {
+
+        background-color: #B7E4C7;
+        border: 2px solid;
+        border-color: #2D6A4F;
+        border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
+        margin-bottom: 4vw;
+        padding: 2vw;
+    }
+
+    &__legend {
+        color: white;
+        padding: 0.5em;
+        background-color: #2D6A4F;
+        border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
+        text-align: center;
+        font-family: "Roboto";
+        text-transform: uppercase;
+        font-weight: 700;
+        font-style: bold;
+    }
+
+    .label-block {
+        display: block;
+        margin-top: 0.1vw;
+        margin-bottom: 0.1vw;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea {
+        width: 75%;
+        height: 3vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        background-color: #D8F3DC;
+        border: 1px solid #2D6A4F;
+        border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 1vw;
+
+        font-size: small;
+
+        &__info-iframe {
+            width: 50%;
+            height: auto;
+
+        }
+
+
+    }
+
+        
 }
 
-fieldset {
+.contact-form__submit {
+            background-color: blueviolet;
 
-    background-color: #B7E4C7;
-    border: 2px solid;
-    border-color: #2D6A4F;
-    border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
-    margin-bottom: 4vw;
-    padding: 2vw;
-}
-
-legend {
-    color: white;
-    padding: 0.5em;
-    background-color: #2D6A4F;
-    border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
-    text-align: center;
-    font-family: "Roboto";
-    text-transform: uppercase;
-    font-weight: 700;
-    font-style: bold;
-}
-
-.label-block {
-    display: block;
-    margin-top: 0.1vw;
-    margin-bottom: 0.1vw;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel],
-textarea {
-    width: 75%;
-    height: 3vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    background-color: #D8F3DC;
-    border: 1px solid #2D6A4F;
-    border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
-}
+            &:hover {
+                    background-color: #d4656e; // Color al pasar el ratón por encima
+                }
+        }

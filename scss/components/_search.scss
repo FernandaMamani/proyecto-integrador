@@ -4,7 +4,10 @@
 .search-section {
     width: 60vw;
     margin: 2vw;
-   
+    display: grid;
+    grid-template-columns: 3fr auto;
+    gap: 1vw;
+
 
 
     &__form {
@@ -15,25 +18,36 @@
     &__bar {
         display: flex;
         align-items: center;
+        width: 100%;
     }
 
     &__input,
     &__btn {
-        height: 40px;
-        border: 1px solid #ccc;
-        padding: 5px 10px;
+        height: 4vw;
+        border: 1.5px solid #ccc;
+        padding: 0.5vw;
     }
 
     &__input {
         border-right: none;
         flex-grow: 1;
-width: 60vw;
-         
+        width: 100%;
+
     }
 
     &__btn {
         background-color: rgb(94, 29, 168);
         border-left: none;
+    }
+
+    &__new-product {
+        align-self: center;
+        padding: 0.5vw;
+        background-color: rgb(94, 29, 168);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1, 2vw;
     }
 
 }
