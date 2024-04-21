@@ -1,251 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es-Ar">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="desciption" content="Esta página es una tienda de Especias, condimentos y semillas">
-    <meta name="keywords" content="Tienda, proyecto, proyecto integrador">
-    <meta name="María Fernanda Mamani" content="x">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Esta página es un proyecto de React">
+    <meta name="keywords" content="proyecto react">
+    <meta name="author" content="Sergio Regalado Alessi">
 
-    <title>Maluku</title>
-    <link rel="shortcut icon" href="./images/Logo Ave Negra Maluku.png">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <title>Mi App React</title>
 
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 
-<body class="home">
-    <header class="header">
-        <img class="header__logo" src="./images/Recurso 11.png" alt="Logo">
-        <!-- <h1 class="header__title"></h1> -->
-        <nav class="navbar">
-            <ul class="navbar__menu">
-                <li>
-                    <a class="navbar__item navbar__item--active" href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a class="navbar__item" href="./about.html">Nosotros</a>
-                </li>
-                <li>
-                    <a class="navbar__item" href="./contact.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+<body>
 
-        <div class="header__cart">
-            <a class="header__icon" href="./cart.html">
-                <span class="material-symbols-outlined header__icon-span">shopping_cart</span>Mi Carrito
-            </a>
-        </div>
+    <!--
+        El siguiente elemento HTML, es el elemento raíz en donde se montarán
+        todos los componentes de la aplicación React.
+    -->
+    <div id="root"></div>
 
-    </header>
-
-    <main class="main">
-        <section class="section section--slider">
-            <div class="slider">
-                <div class="slider__one">
-                    <h4 class="slider__title"></h4>
-                    <img class="slider__image" src="./images/gallery/anis-maluku-pi.jpg" alt="">
-                </div>
-                <div class="slider__two">
-                    <h4 class="slider__title"></h4>
-                    <img class="slider__image" src="./images/gallery/especias-maluku-pi.jpg" alt="">
-                </div>
-                <div class="slider__three">
-                    <h4 class="slider__title"></h4>
-                    <img class="slider__image" src="./images/gallery/especias2-maluku-pi.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <Section class="section search-section">
-            <!-- <div>formulario de busqueda y link para crear un nuevo producto</div> -->
-            <form class="search-section__form" action="#" method="post">
-                <div class="search-section__bar">
-                    <input class="search-section__input" type="search" placeholder="Buscar"></input>
-                    <button class="search-section__btn button--xs" type="submit"><span
-                            class="material-symbols-outlined">search</span></button>
-                </div>
-            </form>
-
-            <a href="./products.html" class="search-section__new-product">Agregar Producto</a>
-
-        </Section>
-
-        <h3>Galeria de productos</h3>
-        <section class="section section--products">
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/pimientaG-maluku-pi copia.jpg"
-                    alt="descripción de la foto">
-                <h4 class="card__title">Nombre del primer producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem, vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">5500,02</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--disabled">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/oregano-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/ajiMolido-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/anisestrella-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/canela-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/chia-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/lino-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/pimenton-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/girasol-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/nueces-maluku-pi.jpg" alt="descripción de la foto">
-                <h4 class="card__title">Nombre del segundo producto</h4>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis quo
-                    laboriosam rem,
-                    vel
-                    saepe corrupti non, explicabo dolorem necessitatibus dolorum a officiis repudiandae temporibus.
-                    Temporibus quam nulla harum expedita?</p>
-                <div class="card__item">
-                    <span class="card__price">8500,50</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__count">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <span>&copy; 2023 Todos los derechos reservados.</span>
-    </footer>
-
-    <script src="./js/"></script>
+    <!--
+        El siguiente script JS, es el punto de entrada de la aplicación React.
+        Generalmente, este script se denomina index.jsx.
+    -->
+    <script type="module" src="/src/index.jsx"></script>
 
 </body>
 
